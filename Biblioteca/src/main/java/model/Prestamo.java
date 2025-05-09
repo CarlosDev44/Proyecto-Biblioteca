@@ -11,23 +11,13 @@ public class Prestamo {
     private Usuario usuario;
     private EstadoPrestamo estadoPrestamo;
 
-    public Prestamo(int id, String fechaPrestamo, String fechaDevolucion, List<Libro> listLibrosSolicitados, EstadoPrestamo estadoPrestamo, Usuario usuario) {
+    public Prestamo(int id, String fechaPrestamo, String fechaDevolucion, List<Libro> listLibrosSolicitados, Usuario usuario, EstadoPrestamo estadoPrestamo) {
         this.id = id;
         this.fechaPrestamo = fechaPrestamo;
         this.fechaDevolucion = fechaDevolucion;
         this.listLibrosSolicitados = listLibrosSolicitados;
         this.estadoPrestamo = estadoPrestamo;
         this.usuario = usuario;
-    }
-
-    public Prestamo(int id, String fechaPrestamo, String fechaDevolucion, List<Libro> listLibrosSolicitados, Usuario usuario, EstadoPrestamo estadoPrestamo)
-    {
-        this.id = id;
-        this.fechaPrestamo = fechaPrestamo;
-        this.fechaDevolucion = fechaDevolucion;
-        this.listLibrosSolicitados = listLibrosSolicitados;
-        this.usuario = usuario;
-        this.estadoPrestamo = estadoPrestamo;
     }
 
     public int getId() {

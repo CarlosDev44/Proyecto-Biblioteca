@@ -4,16 +4,28 @@ import java.util.List;
 
 public class SolicitudPrestamo {
 
+    private int id;
     private String fecha;
     private List<Libro> listLibrosSolicitados;
     private Usuario usuario;
 
-    SolicitudPrestamo(String fecha, List<Libro> listLibrosSolicitados, Usuario usuario)
+    SolicitudPrestamo(int id, String fecha, List<Libro> listLibrosSolicitados, Usuario usuario)
     {
+        this.id = id;
         this.fecha = fecha;
         this.listLibrosSolicitados = listLibrosSolicitados;
         this.usuario = usuario;
 
+    }
+
+    public int getId()
+    {
+        return id;
+    }
+
+    public void setId (int id)
+    {
+        this.id = id;
     }
 
     public String getFecha() {

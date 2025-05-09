@@ -6,16 +6,16 @@ public abstract class Libro {
     private String autor;
     private String genero;
     private int anoPublicacion;
+    private String portada;
     private Disponibilidad disponibilidad;
-    private String contenido;
 
-    public Libro(String titulo, String autor, String genero, int anoPublicacion, Disponibilidad disponibilidad, String contenido) {
+    public Libro(String titulo, String autor, String genero, int anoPublicacion, String portada, Disponibilidad disponibilidad) {
         this.titulo = titulo;
         this.autor = autor;
         this.genero = genero;
         this.anoPublicacion = anoPublicacion;
+        this.portada = portada;
         this.disponibilidad = disponibilidad;
-        this.contenido = contenido;
     }
 
     public String getTitulo() {
@@ -58,11 +58,11 @@ public abstract class Libro {
         this.disponibilidad = disponibilidad;
     }
 
-    public String getContenido() {
-        return contenido;
+    public String getPortada() {
+        return portada;
     }
 
-    public void setContenido(String contenido) {
-        this.contenido = contenido;
+    public void setPortada(String portada) {
+        this.portada = portada;
     }
 }
