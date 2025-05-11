@@ -27,4 +27,13 @@ public class LibroDigital extends Libro{
     public void setFormato(Formato formato) {
         this.formato = formato;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                "LibroDigital{" +
+                "enlaceDescarga='" + enlaceDescarga + '\'' +
+                ", formato=" + formato +
+                '}';
+    }
 }

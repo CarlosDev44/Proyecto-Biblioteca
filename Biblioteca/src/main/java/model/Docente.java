@@ -1,9 +1,11 @@
 package model;
 
 import java.time.Duration;
+import java.time.LocalDate;
+import java.util.List;
 
 
-public class Docente extends Usuario{
+public class Docente extends Usuario implements OpcionesUsuario{
     private int limitePrestamos = 4;
     private Duration tiempoMaximo = Duration.ofDays(4);
 
@@ -27,4 +29,19 @@ public class Docente extends Usuario{
     public void setTiempoMaximo(Duration tiempoMaximo) {
         this.tiempoMaximo = tiempoMaximo;
     }
+
+    @Override
+    public void solicitarPrestamo(LocalDate fecha, List<Libro> librosSolicitados, Usuario usuario, Bibliotecario bibliotecario)
+    {
+        SolicitudPrestamo solicitud = new SolicitudPrestamo(fecha, librosSolicitados, usuario, bibliotecario);
+
+        bibliotecario.agregarSolicitud(solicitud);
+
+    }
+    @Override
+    public String consultarLibro(Libro libro)
+    {
+        return libro.toString();
+    }
+
 }

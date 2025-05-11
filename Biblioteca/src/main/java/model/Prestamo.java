@@ -1,18 +1,17 @@
 package model;
 
 import java.util.List;
+import java.time.LocalDate;
 
 public class Prestamo {
 
-    private int id;
-    private String fechaPrestamo;
+    private LocalDate fechaPrestamo;
     private String fechaDevolucion;
     private List<Libro> listLibrosSolicitados;
     private Usuario usuario;
     private EstadoPrestamo estadoPrestamo;
 
-    public Prestamo(int id, String fechaPrestamo, String fechaDevolucion, List<Libro> listLibrosSolicitados, Usuario usuario, EstadoPrestamo estadoPrestamo) {
-        this.id = id;
+    public Prestamo(LocalDate fechaPrestamo, String fechaDevolucion, List<Libro> listLibrosSolicitados, Usuario usuario, EstadoPrestamo estadoPrestamo) {
         this.fechaPrestamo = fechaPrestamo;
         this.fechaDevolucion = fechaDevolucion;
         this.listLibrosSolicitados = listLibrosSolicitados;
@@ -20,19 +19,11 @@ public class Prestamo {
         this.usuario = usuario;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getFechaPrestamo() {
+    public LocalDate getFechaPrestamo() {
         return fechaPrestamo;
     }
 
-    public void setFechaPrestamo(String fechaPrestamo) {
+    public void setFechaPrestamo(LocalDate fechaPrestamo) {
         this.fechaPrestamo = fechaPrestamo;
     }
 

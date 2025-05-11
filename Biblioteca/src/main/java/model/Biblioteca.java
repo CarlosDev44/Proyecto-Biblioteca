@@ -53,4 +53,17 @@ public class Biblioteca {
     public void setListLibros(List<Libro> listLibros) {
         this.listLibros = listLibros;
     }
+
+    public void agregarLibro(Libro libro)
+    {
+        listLibros.add(libro);
+    }
+    public void agregarEmpleado(Empleado empleado)
+    {
+        listEmpleados.add(empleado);
+    }
+    public void agregarUsuario(Usuario usuario)
+    {
+        listUsuarios.add(usuario);
+    }
 }

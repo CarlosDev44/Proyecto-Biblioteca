@@ -1,38 +1,28 @@
 package model;
 
 import java.util.List;
+import java.time.LocalDate;
 
 public class SolicitudPrestamo {
 
-    private int id;
-    private String fecha;
+    private LocalDate fecha;
     private List<Libro> listLibrosSolicitados;
     private Usuario usuario;
+    private Bibliotecario bibliotecario;
 
-    SolicitudPrestamo(int id, String fecha, List<Libro> listLibrosSolicitados, Usuario usuario)
+    SolicitudPrestamo(LocalDate fecha, List<Libro> listLibrosSolicitados, Usuario usuario, Bibliotecario bibliotecario)
     {
-        this.id = id;
         this.fecha = fecha;
         this.listLibrosSolicitados = listLibrosSolicitados;
         this.usuario = usuario;
-
+        this.bibliotecario = bibliotecario;
     }
 
-    public int getId()
-    {
-        return id;
-    }
-
-    public void setId (int id)
-    {
-        this.id = id;
-    }
-
-    public String getFecha() {
+    public LocalDate getFecha() {
         return fecha;
     }
 
-    public void setFecha(String fecha) {
+    public void setFecha(LocalDate fecha) {
         this.fecha = fecha;
     }
 
@@ -50,5 +40,13 @@ public class SolicitudPrestamo {
 
     public void setUsuario(Usuario usuario) {
         this.usuario = usuario;
+    }
+
+    public Bibliotecario getBibliotecario() {
+        return bibliotecario;
+    }
+
+    public void setBibliotecario(Bibliotecario bibliotecario) {
+        this.bibliotecario = bibliotecario;
     }
 }

@@ -65,4 +65,16 @@ public abstract class Libro {
     public void setPortada(String portada) {
         this.portada = portada;
     }
+
+    @Override
+    public String toString() {
+        return "Libro{" +
+                "titulo='" + titulo + '\'' +
+                ", autor='" + autor + '\'' +
+                ", genero='" + genero + '\'' +
+                ", anoPublicacion=" + anoPublicacion +
+                ", portada='" + portada + '\'' +
+                ", disponibilidad=" + disponibilidad +
+                '}';
+    }
 }

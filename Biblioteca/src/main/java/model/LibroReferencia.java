@@ -6,4 +6,5 @@ public class LibroReferencia extends Libro {
     {
         super(titulo, autor, genero, anoPublicacion, portada, disponibilidad);
     }
+
 }

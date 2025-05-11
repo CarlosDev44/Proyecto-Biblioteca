@@ -37,4 +37,14 @@ public class LibroFisico extends Libro {
     public void setUbicacion(String ubicacion) {
         this.ubicacion = ubicacion;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                "LibroFisico{" +
+                "numeroPaginas='" + numeroPaginas + '\'' +
+                ", editorial='" + editorial + '\'' +
+                ", ubicacion='" + ubicacion + '\'' +
+                '}';
+    }
 }
