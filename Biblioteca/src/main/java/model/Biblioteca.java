@@ -6,8 +6,10 @@ import java.util.List;
 public class Biblioteca {
     private String nombre;
     private List<Empleado> listEmpleados;
-    private List<Usuario> listUsuarios;
+    private List<UsuarioComun> listUsuarios;
     private List<Libro> listLibros;
+    private List<Prestamo> listPrestamos;
+    private List<Reporte> listReportes;
 
     public Biblioteca(String nombre)
     {
@@ -15,7 +17,8 @@ public class Biblioteca {
         this.listEmpleados = new ArrayList<>();
         this.listUsuarios = new ArrayList<>();
         this.listLibros = new ArrayList<>();
-
+        this.listPrestamos = new ArrayList<>();
+        this.listReportes = new ArrayList<>();
     }
 
     public String getNombre()
@@ -38,12 +41,12 @@ public class Biblioteca {
         this.listEmpleados = listEmpleados;
     }
 
-    public List<Usuario> getListUsuarios() {
+    public List<UsuarioComun> getListUsuarios() {
         return listUsuarios;
     }
 
-    public void setListUsuarios(List<Usuario> listUsuarios) {
-        this.listUsuarios = listUsuarios;
+    public void setListUsuarios(List<UsuarioComun> listUsuarioComuns) {
+        this.listUsuarios = listUsuarioComuns;
     }
 
     public List<Libro> getListLibros() {
@@ -52,5 +55,40 @@ public class Biblioteca {
 
     public void setListLibros(List<Libro> listLibros) {
         this.listLibros = listLibros;
+    }
+    public List<Prestamo> getListPrestamos ()
+    {
+        return listPrestamos;
+    }
+
+    public void setListPrestamos ( List<Prestamo> listPrestamos)
+    {
+        this.listPrestamos = listPrestamos;
+    }
+
+    public List<Reporte> getListReportes() {
+        return listReportes;
+    }
+
+    public void setListReportes(List<Reporte> listReportes) {
+        this.listReportes = listReportes;
+    }
+
+    public void agregarLibros(Libro libro)
+    {
+        listLibros.add(libro);
+    }
+
+    public void agregarUsuario(UsuarioComun usuarioComun)
+    {
+        listUsuarios.add(usuarioComun);
+    }
+    public void agregarEmpleado(Empleado empleado)
+    {
+        listEmpleados.add(empleado);
+    }
+    public void agregarPrestamo(Prestamo prestamo)
+    {
+        listPrestamos.add(prestamo);
     }
 }

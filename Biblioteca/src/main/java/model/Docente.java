@@ -3,28 +3,17 @@ package model;
 import java.time.Duration;
 
 
-public class Docente extends Usuario{
-    private int limitePrestamos = 4;
-    private Duration tiempoMaximo = Duration.ofDays(4);
+public class Docente extends UsuarioPrestamo {
 
     public Docente(String nombre, int id, String correo)
     {
-        super(nombre, id, correo);
+        super(nombre,id, correo, 4, 4);
     }
 
-    public int getLimitePrestamos() {
-        return limitePrestamos;
+    @Override
+    public String consultarLibro(Libro libro)
+    {
+        return libro.toString();
     }
 
-    public void setLimitePrestamos(int limitePrestamos) {
-        this.limitePrestamos = limitePrestamos;
-    }
-
-    public Duration getTiempoMaximo() {
-        return tiempoMaximo;
-    }
-
-    public void setTiempoMaximo(Duration tiempoMaximo) {
-        this.tiempoMaximo = tiempoMaximo;
-    }
 }
