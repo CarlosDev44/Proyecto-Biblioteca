@@ -2,6 +2,7 @@ package model;
 
 public abstract class Libro {
 
+    private int id;
     private String titulo;
     private String autor;
     private String genero;
@@ -9,13 +10,21 @@ public abstract class Libro {
     private String portada;
     private Disponibilidad disponibilidad;
 
-    public Libro(String titulo, String autor, String genero, int anoPublicacion, String portada, Disponibilidad disponibilidad) {
+    public Libro(int id, String titulo, String autor, String genero, int anoPublicacion, String portada, Disponibilidad disponibilidad) {
         this.titulo = titulo;
         this.autor = autor;
         this.genero = genero;
         this.anoPublicacion = anoPublicacion;
         this.portada = portada;
         this.disponibilidad = disponibilidad;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getTitulo() {

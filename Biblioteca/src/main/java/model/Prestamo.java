@@ -5,18 +5,28 @@ import java.time.LocalDate;
 
 public class Prestamo {
 
+    private int id;
     private LocalDate fechaPrestamo;
-    private String fechaDevolucion;
+    private LocalDate fechaDevolucion;
     private List<Libro> listLibrosSolicitados;
-    private Usuario usuario;
+    private UsuarioPrestamo usuarioPrestamo;
     private EstadoPrestamo estadoPrestamo;
 
-    public Prestamo(LocalDate fechaPrestamo, String fechaDevolucion, List<Libro> listLibrosSolicitados, Usuario usuario, EstadoPrestamo estadoPrestamo) {
-        this.fechaPrestamo = fechaPrestamo;
-        this.fechaDevolucion = fechaDevolucion;
+    public Prestamo(int id, List<Libro> listLibrosSolicitados, UsuarioPrestamo usuarioPrestamo, EstadoPrestamo estadoPrestamo) {
+        this.id = id;
+        this.fechaPrestamo = LocalDate.now();
+        this.fechaDevolucion = this.fechaPrestamo.plusDays(usuarioPrestamo.getTiempoMaximoPrestamos());
         this.listLibrosSolicitados = listLibrosSolicitados;
         this.estadoPrestamo = estadoPrestamo;
-        this.usuario = usuario;
+        this.usuarioPrestamo = usuarioPrestamo;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public LocalDate getFechaPrestamo() {
@@ -27,11 +37,11 @@ public class Prestamo {
         this.fechaPrestamo = fechaPrestamo;
     }
 
-    public String getFechaDevolucion() {
+    public LocalDate getFechaDevolucion() {
         return fechaDevolucion;
     }
 
-    public void setFechaDevolucion(String fechaDevolucion) {
+    public void setFechaDevolucion(LocalDate fechaDevolucion) {
         this.fechaDevolucion = fechaDevolucion;
     }
 
@@ -43,12 +53,12 @@ public class Prestamo {
         this.listLibrosSolicitados = listLibrosSolicitados;
     }
 
-    public Usuario getUsuario() {
-        return usuario;
+    public UsuarioPrestamo getUsuarioPrestamo() {
+        return usuarioPrestamo;
     }
 
-    public void setUsuario(Usuario usuario) {
-        this.usuario = usuario;
+    public void setUsuarioPrestamo(UsuarioPrestamo usuarioPrestamo) {
+        this.usuarioPrestamo = usuarioPrestamo;
     }
 
     public EstadoPrestamo getEstadoPrestamo() {
