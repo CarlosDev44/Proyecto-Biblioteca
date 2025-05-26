@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="559.0" prefWidth="783.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AgregarLibroController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a9d5ff" height="452.0" layoutX="517.0" layoutY="38.0" stroke="BLACK" strokeType="INSIDE" width="247.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a9d5ff" height="452.0" layoutX="-6.0" layoutY="33.0" stroke="BLACK" strokeType="INSIDE" width="238.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#a9d5ff" height="452.0" layoutX="252.0" layoutY="38.0" stroke="BLACK" strokeType="INSIDE" width="247.0" />
+      <Label layoutX="312.0" prefHeight="31.0" prefWidth="162.0" text="Registrar Libros">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="61.0" text="ID" />
+      <TextField fx:id="txtIdFisico" layoutX="59.0" layoutY="57.0" />
+      <Label layoutX="20.0" layoutY="93.0" text="Titulo" />
+      <TextField fx:id="txtTituloFisico" layoutX="59.0" layoutY="89.0" />
+      <TextField fx:id="txtAutorFisico" layoutX="59.0" layoutY="125.0" />
+      <Label layoutX="20.0" layoutY="129.0" text="Autor" />
+      <TextField fx:id="txtGeneroFisico" layoutX="59.0" layoutY="161.0" />
+      <Label layoutX="14.0" layoutY="165.0" text="Genero" />
+      <TextField fx:id="txtanioFisico" layoutX="59.0" layoutY="196.0" />
+      <Label layoutX="18.0" layoutY="200.0" text="Año" />
+      <Label layoutX="2.0" layoutY="241.0" text="N Paginas" />
+      <TextField fx:id="txtPaginasFisico" layoutX="59.0" layoutY="237.0" />
+      <TextField fx:id="txtEditorialFisico" layoutX="59.0" layoutY="276.0" />
+      <Label layoutX="7.0" layoutY="280.0" text="Editorial" />
+      <TextField fx:id="txtUbicacionFisico" layoutX="59.0" layoutY="318.0" />
+      <Label layoutX="7.0" layoutY="322.0" text="Ubicación" />
+      <Label layoutX="281.0" layoutY="69.0" text="ID" />
+      <TextField fx:id="txtIdDigital" layoutX="311.0" layoutY="65.0" />
+      <Label layoutX="272.0" layoutY="101.0" text="Titulo" />
+      <TextField fx:id="txtTituloDigital" layoutX="311.0" layoutY="97.0" />
+      <TextField fx:id="txtAutorDigital" layoutX="311.0" layoutY="133.0" />
+      <Label layoutX="272.0" layoutY="137.0" text="Autor" />
+      <TextField fx:id="txtGeneroDigital" layoutX="311.0" layoutY="169.0" />
+      <Label layoutX="266.0" layoutY="173.0" text="Genero" />
+      <TextField fx:id="txtAnioDigital" layoutX="311.0" layoutY="204.0" />
+      <Label layoutX="270.0" layoutY="208.0" text="Año" />
+      <Label layoutX="7.0" layoutY="359.0" text="Portada" />
+      <ImageView fx:id="imgPortadaFisico" fitHeight="76.0" fitWidth="146.0" layoutX="60.0" layoutY="359.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="txtEnlaceDigital" layoutX="311.0" layoutY="237.0" />
+      <Label layoutX="270.0" layoutY="241.0" text="Enlace" />
+      <Label layoutX="263.0" layoutY="280.0" text="Formato" />
+      <ComboBox fx:id="combFormatodigital" layoutX="314.0" layoutY="276.0" prefWidth="150.0" />
+      <Label layoutX="260.0" layoutY="371.0" text="Portada" />
+      <ImageView fx:id="imgPortadaDigital" fitHeight="76.0" fitWidth="146.0" layoutX="311.0" layoutY="342.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="563.0" layoutY="61.0" text="ID" />
+      <TextField fx:id="txtIdReferencia" layoutX="593.0" layoutY="57.0" />
+      <Label layoutX="554.0" layoutY="93.0" text="Titulo" />
+      <TextField fx:id="txtTituloReferencia" layoutX="593.0" layoutY="89.0" />
+      <TextField fx:id="txtAutorReferencia" layoutX="593.0" layoutY="125.0" />
+      <Label layoutX="554.0" layoutY="129.0" text="Autor" />
+      <TextField fx:id="txtGeneroReferencia" layoutX="593.0" layoutY="161.0" />
+      <Label layoutX="548.0" layoutY="165.0" text="Genero" />
+      <TextField fx:id="txtAnioReferencia" layoutX="593.0" layoutY="196.0" />
+      <Label layoutX="552.0" layoutY="200.0" text="Año" />
+      <TextField fx:id="txtEditorialReferencia" layoutX="593.0" layoutY="228.0" />
+      <Label layoutX="540.0" layoutY="232.0" text="Editorial" />
+      <TextField fx:id="txtUbicacionReferencia" layoutX="593.0" layoutY="267.0" />
+      <Label layoutX="535.0" layoutY="267.0" text="Ubicación" />
+      <Label layoutX="533.0" layoutY="335.0" text="Portada" />
+      <ImageView fx:id="imgPortadaReferencia" fitHeight="76.0" fitWidth="146.0" layoutX="595.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="102.0" layoutY="453.0" mnemonicParsing="false" onAction="#GuardarFisico" text="Guardar" />
+      <Button layoutX="359.0" layoutY="453.0" mnemonicParsing="false" onAction="#GuardarDigital" text="Guardar" />
+      <Button layoutX="615.0" layoutY="454.0" mnemonicParsing="false" onAction="#GuardarReferencia" text="Guardar" />
+      <Button layoutX="19.0" layoutY="505.0" mnemonicParsing="false" onAction="#VolverAtras" prefHeight="31.0" prefWidth="91.0" text="Volver Atrás" />
+      <Label layoutX="98.0" layoutY="38.0" text="Libro Fisico" textFill="#0000006d" />
+      <Label layoutX="358.0" layoutY="38.0" text="Libro Digital" textFill="#0000006d" />
+      <Label layoutX="615.0" layoutY="38.0" text="Libro Referencia" textFill="#0000006d" />
+      <Line endX="48.00001525878906" layoutX="158.0" layoutY="359.0" startX="-96.40000915527344" />
+      <Line endX="-107.99998474121094" endY="65.99996948242188" layoutX="168.0" layoutY="369.0" startX="-107.99998474121094" startY="-9.5" />
+      <Line endX="-118.00000762939453" endY="53.800018310546875" layoutX="178.0" layoutY="379.0" startX="28.000030517578125" startY="53.800018310546875" />
+      <Line endX="18.800018310546875" endY="-29.0" layoutX="188.0" layoutY="389.0" startX="18.800018310546875" startY="41.399993896484375" />
+      <Line endX="48.00001525878906" layoutX="409.0" layoutY="344.0" startX="-96.40000915527344" />
+      <Line endX="-107.99998474121094" endY="65.99996948242188" layoutX="419.0" layoutY="354.0" startX="-107.99998474121094" startY="-9.5" />
+      <Line endX="-118.00000762939453" endY="53.800018310546875" layoutX="429.0" layoutY="364.0" startX="28.000030517578125" startY="53.800018310546875" />
+      <Line endX="18.800018310546875" endY="-29.0" layoutX="439.0" layoutY="374.0" startX="18.800018310546875" startY="41.399993896484375" />
+      <Line endX="48.00001525878906" layoutX="692.0" layoutY="310.0" startX="-96.40000915527344" />
+      <Line endX="-107.99998474121094" endY="65.99996948242188" layoutX="702.0" layoutY="320.0" startX="-107.99998474121094" startY="-9.5" />
+      <Line endX="-118.00000762939453" endY="53.800018310546875" layoutX="712.0" layoutY="330.0" startX="28.000030517578125" startY="53.800018310546875" />
+      <Line endX="18.800018310546875" endY="-29.0" layoutX="722.0" layoutY="340.0" startX="18.800018310546875" startY="41.399993896484375" />
+      <Label layoutX="258.0" layoutY="512.0" text="Haz click en los recuadros para elegir una portada ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

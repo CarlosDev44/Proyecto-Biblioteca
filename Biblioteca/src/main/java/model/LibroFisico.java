@@ -1,20 +1,21 @@
 package model;
 
+//Clase que representa los librosFisicos, hereda de Libro
 public class LibroFisico extends Libro {
 
     private String numeroPaginas;
     private String editorial;
     private String ubicacion;
 
-    public LibroFisico(String titulo, String autor, String genero, int anoPublicacion, String portada, Disponibilidad disponibilidad, String numeroPaginas, String editorial, String ubicacion)
+    public LibroFisico(int id, String titulo, String autor, String genero, int anoPublicacion, String portada, Disponibilidad disponibilidad, String numeroPaginas, String editorial, String ubicacion)
     {
-        super(titulo, autor, genero, anoPublicacion, portada, disponibilidad);
+        super(id, titulo, autor, genero, anoPublicacion, portada, disponibilidad);
         this.numeroPaginas = numeroPaginas;
         this.editorial = editorial;
         this.ubicacion = ubicacion;
     }
 
-    public String getNumeroPaginas() {
+    public String getPaginas() {
         return numeroPaginas;
     }
 

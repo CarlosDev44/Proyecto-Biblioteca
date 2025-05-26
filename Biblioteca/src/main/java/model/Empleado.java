@@ -1,5 +1,6 @@
 package model;
 
+//Clase abstracta Empleado, que representa los empleados (Bibliotecario y Administrador)
 public abstract class Empleado {
     private String nombre;
     private int id;

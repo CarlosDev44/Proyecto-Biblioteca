@@ -1,13 +1,14 @@
 package model;
 
+//Clase que representa los libros Digitales, hereda de libro
 public class LibroDigital extends Libro{
 
     private String enlaceDescarga;
     private Formato formato;
 
-    public LibroDigital(String titulo, String autor, String genero, int anoPublicacion, String portada, Disponibilidad disponibilidad, String enlaceDescarga, Formato formato)
+    public LibroDigital(int id, String titulo, String autor, String genero, int anoPublicacion, String portada, Disponibilidad disponibilidad, String enlaceDescarga, Formato formato)
     {
-        super(titulo, autor, genero, anoPublicacion, portada, disponibilidad);
+        super(id, titulo, autor, genero, anoPublicacion, portada, disponibilidad);
         this.enlaceDescarga = enlaceDescarga;
         this.formato = formato;
     }

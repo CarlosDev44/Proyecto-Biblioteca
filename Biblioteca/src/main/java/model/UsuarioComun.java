@@ -1,17 +1,19 @@
 package model;
 
+//Clase abstrata para representar a todos los usuarios
 public abstract class UsuarioComun {
 
     private String nombre;
     private int id;
     private String correo;
+    private EstadoUsuario estadoUsuario;
 
-    public UsuarioComun(String nombre, int id, String correo)
+    public UsuarioComun(String nombre, int id, String correo, EstadoUsuario estadoUsuario)
     {
         this.nombre = nombre;
         this.id = id;
         this.correo = correo;
-
+        this.estadoUsuario = estadoUsuario;
     }
 
     public String getNombre() {
@@ -38,6 +40,15 @@ public abstract class UsuarioComun {
         this.correo = correo;
     }
 
+    public EstadoUsuario getEstadoUsuario() {
+        return estadoUsuario;
+    }
+
+    public void setEstadoUsuario(EstadoUsuario estadoUsuario) {
+        this.estadoUsuario = estadoUsuario;
+    }
+
+    //Clase abstracta para que todos puedan consultar un libro en especifico
     public abstract String consultarLibro(Libro libro);
 
 }

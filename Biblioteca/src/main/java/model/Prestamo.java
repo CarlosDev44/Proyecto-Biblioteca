@@ -3,6 +3,7 @@ package model;
 import java.util.List;
 import java.time.LocalDate;
 
+//Clase que representa los Prestamos
 public class Prestamo {
 
     private int id;
@@ -15,7 +16,7 @@ public class Prestamo {
     public Prestamo(int id, List<Libro> listLibrosSolicitados, UsuarioPrestamo usuarioPrestamo, EstadoPrestamo estadoPrestamo) {
         this.id = id;
         this.fechaPrestamo = LocalDate.now();
-        this.fechaDevolucion = this.fechaPrestamo.plusDays(usuarioPrestamo.getTiempoMaximoPrestamos());
+        this.fechaDevolucion = null;
         this.listLibrosSolicitados = listLibrosSolicitados;
         this.estadoPrestamo = estadoPrestamo;
         this.usuarioPrestamo = usuarioPrestamo;
@@ -67,5 +68,17 @@ public class Prestamo {
 
     public void setEstadoPrestamo(EstadoPrestamo estadoPrestamo) {
         this.estadoPrestamo = estadoPrestamo;
+    }
+
+    @Override
+    public String toString() {
+        return "Prestamo{" +
+                "id=" + id +
+                ", fechaPrestamo=" + fechaPrestamo +
+                ", fechaDevolucion=" + fechaDevolucion +
+                ", listLibrosSolicitados=" + listLibrosSolicitados +
+                ", usuarioPrestamo=" + usuarioPrestamo +
+                ", estadoPrestamo=" + estadoPrestamo +
+                '}';
     }
 }

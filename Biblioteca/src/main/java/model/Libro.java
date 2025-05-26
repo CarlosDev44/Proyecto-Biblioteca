@@ -1,5 +1,6 @@
 package model;
 
+//Clase abstracta que representa todos los tipos de libros
 public abstract class Libro {
 
     private int id;
@@ -9,8 +10,10 @@ public abstract class Libro {
     private int anoPublicacion;
     private String portada;
     private Disponibilidad disponibilidad;
+    private int vecesPrestado = 0;
 
     public Libro(int id, String titulo, String autor, String genero, int anoPublicacion, String portada, Disponibilidad disponibilidad) {
+        this.id = id;
         this.titulo = titulo;
         this.autor = autor;
         this.genero = genero;
@@ -51,7 +54,7 @@ public abstract class Libro {
         this.genero = genero;
     }
 
-    public int getAnoPublicacion() {
+    public int getAnio() {
         return anoPublicacion;
     }
 
@@ -75,6 +78,14 @@ public abstract class Libro {
         this.portada = portada;
     }
 
+    public int getVecesPrestado() {
+        return vecesPrestado;
+    }
+
+    public void setVecesPrestado(int vecesPrestado) {
+        this.vecesPrestado = vecesPrestado;
+    }
+
     @Override
     public String toString() {
         return "Libro{" +
@@ -85,5 +96,11 @@ public abstract class Libro {
                 ", portada='" + portada + '\'' +
                 ", disponibilidad=" + disponibilidad +
                 '}';
+    }
+
+    //Metodo para incrementar el atributo 'vecesPrestado' con el fin de que cuando un libro se preste, este atributo incremente en 1
+    public void incrementarVecesPrestamo()
+    {
+        this.vecesPrestado ++;
     }
 }
