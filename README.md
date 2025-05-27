@@ -32,4 +32,19 @@ Contra: contra321 <br>
 De igual manera se encuentran en el menu principal en esta parte <br>
 ![image](https://github.com/user-attachments/assets/6ab8ca62-39b9-45fb-9f84-e1534bcc86da)
 
+⚠️⚠️⚠️****** IMPORTANTE ******⚠️⚠️⚠️⚠️
+
+3.Al querer utilizar la opcion de enviar correos, asegurate de que el correo del usuario registrado sea un correo electronico valido, o no funcionara. <br>
+
+⚠️Si no encuentras el correo en la pagina principal de tu correo (Gmail), busca en Spam. <br>
+![image](https://github.com/user-attachments/assets/f4971345-28f8-47fa-a7ae-2f8bd66805a0)
+
+⚠️⚠️⚠️****** IMPORTANTE ******⚠️⚠️⚠️⚠️
+
+4. La funcion de generar reporte (sea Administrador o Bibliotecario) generara el reporte en forma de archivo txt, este se creara en la carpeta del proyecto y lo podras abrir.<br>
+
+
+
+
+
 
