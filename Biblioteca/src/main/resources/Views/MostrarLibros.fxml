@@ -9,7 +9,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="777.0" prefWidth="1015.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MostrarLibrosController">
+<AnchorPane prefHeight="723.0" prefWidth="1015.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MostrarLibrosController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c5e3ff" height="658.0" layoutY="55.0" stroke="#c5e3ff" strokeType="INSIDE" width="630.0" />
       <Label layoutX="224.0" layoutY="14.0" text="Libros Disponibles">
@@ -53,6 +53,6 @@
       <Label layoutX="251.0" layoutY="493.0" text="Libros de Referencia" />
       <ImageView fx:id="imgPortada" fitHeight="430.0" fitWidth="360.0" layoutX="636.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true" />
       <Label layoutX="788.0" layoutY="161.0" text="Portada" />
-      <Button layoutX="14.0" layoutY="725.0" mnemonicParsing="false" onAction="#VolverAtras" prefHeight="37.0" prefWidth="123.0" text="Volver Atras" />
+      <Button layoutX="706.0" layoutY="656.0" mnemonicParsing="false" onAction="#VolverAtras" prefHeight="37.0" prefWidth="123.0" text="Volver Atras" />
    </children>
 </AnchorPane>
