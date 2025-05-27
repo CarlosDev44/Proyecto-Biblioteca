@@ -48,8 +48,5 @@ public abstract class UsuarioComun {
         this.estadoUsuario = estadoUsuario;
     }
 
-    //Clase abstracta para que todos puedan consultar un libro en especifico
-    public abstract String consultarLibro(Libro libro);
-
 }
 
