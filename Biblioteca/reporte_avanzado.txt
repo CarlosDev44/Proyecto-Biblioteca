@@ -1,0 +1,14 @@
+===== REPORTE AVANZADO DE LA BIBLIOTECA =====
+
+>>> Préstamos por usuario:
+
+Usuario: Carlos
+  - Prestamo{id=1, fechaPrestamo=2025-05-27, fechaDevolucion=2025-05-27, listLibrosSolicitados=[Libro{titulo='100 años de soledad', autor='gabriel garcia marquez', genero='novela', anoPublicacion=1967, portada='C:\Users\USUARIO\Desktop\DatosExposicion\Portadas\portada_cien_anos_de_soledad_0.jpg', disponibilidad=DISPONIBLE}LibroFisico{numeroPaginas='496', editorial='sudamericana', ubicacion='A1'}], usuarioPrestamo=model.Estudiante@17b6fe8e, estadoPrestamo=DEVUELTO}
+
+>>> Libros nunca prestados:
+Todos los libros han sido prestados al menos una vez.
+
+>>> Todos los préstamos:
+- Prestamo{id=1, fechaPrestamo=2025-05-27, fechaDevolucion=2025-05-27, listLibrosSolicitados=[Libro{titulo='100 años de soledad', autor='gabriel garcia marquez', genero='novela', anoPublicacion=1967, portada='C:\Users\USUARIO\Desktop\DatosExposicion\Portadas\portada_cien_anos_de_soledad_0.jpg', disponibilidad=DISPONIBLE}LibroFisico{numeroPaginas='496', editorial='sudamericana', ubicacion='A1'}], usuarioPrestamo=model.Estudiante@17b6fe8e, estadoPrestamo=DEVUELTO}
+
+===== FIN DEL REPORTE =====

@@ -13,11 +13,11 @@ public class LibroDigital extends Libro{
         this.formato = formato;
     }
 
-    public String getEnlaceDescarga() {
+    public String getEnlace() {
         return enlaceDescarga;
     }
 
-    public void setEnlaceDescarga(String enlaceDescarga) {
+    public void setEnlace(String enlaceDescarga) {
         this.enlaceDescarga = enlaceDescarga;
     }
 

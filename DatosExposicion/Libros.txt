@@ -1,0 +1,25 @@
+Libro fisico:
+1
+100 años de soledad
+Gabriel Garcia Marquez
+Novela
+1967
+496
+Editorial sudamericana
+A1
+
+Libro digital:
+2
+La metamorfosis
+Franz Kafka
+Novela corta
+1915
+www.Libro/laMetamorfosis.com
+PDF
+
+Libro referencia:
+Real Academica Española
+Diccionario
+2014
+Espasa Calpe
+A2

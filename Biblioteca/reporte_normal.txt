@@ -1,0 +1,9 @@
+===== REPORTE NORMAL DE LA BIBLIOTECA =====
+
+>>> Libros Prestados:
+
+>>> Usuarios con Deudas:
+
+>>> Top 3 Libros más Prestados:
+
+===== FIN DEL REPORTE =====

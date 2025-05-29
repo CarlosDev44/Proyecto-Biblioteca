@@ -78,6 +78,7 @@ public class RegistrarDevolucionController {
 
             if (nuevoEstado == EstadoPrestamo.DEVUELTO) {
                 Bibliotecario.registrarDevolucion(prestamo);
+
                 Utils.mostrarAlerta("Éxito", "Préstamo devuelto correctamente.");
             } else if (nuevoEstado == EstadoPrestamo.ATRASADO) {
                 Bibliotecario.registrarDevolucionAtrasada(prestamo);

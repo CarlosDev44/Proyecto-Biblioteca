@@ -55,6 +55,7 @@ public class ReporteAvanzado {
     }
 
     //Devuelve una lista de titulos de libros que nunca han sido prestados
+
     public List<String> librosNuncaPrestados(Biblioteca biblioteca) {
         if (biblioteca == null) {
             throw new IllegalArgumentException("La biblioteca no puede ser null.");

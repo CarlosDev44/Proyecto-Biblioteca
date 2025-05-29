@@ -82,6 +82,11 @@ public class Bibliotecario extends Empleado {
         }
         prestamo.setEstadoPrestamo(EstadoPrestamo.DEVUELTO);
         prestamo.setFechaDevolucion(LocalDate.now());
+
+        for(Libro libro : prestamo.getListLibrosSolicitados())
+        {
+            libro.setDisponibilidad(Disponibilidad.DISPONIBLE);
+        }
     }
 
     //Metodo para registrar una devolucion atrasada y marcar el usuario con deuda
@@ -92,6 +97,10 @@ public class Bibliotecario extends Empleado {
         prestamo.setEstadoPrestamo(EstadoPrestamo.ATRASADO);
         prestamo.setFechaDevolucion(LocalDate.now());
         prestamo.getUsuarioPrestamo().setEstadoUsuario(EstadoUsuario.CON_DEUDA);
+        for(Libro libro : prestamo.getListLibrosSolicitados())
+        {
+            libro.setDisponibilidad(Disponibilidad.DISPONIBLE);
+        }
     }
 
     //Metodo para cambiar el estado de un usuario con deuda a sin deuda
